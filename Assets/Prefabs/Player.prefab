@@ -12,8 +12,6 @@ GameObject:
   - component: {fileID: 8215260665364952797}
   - component: {fileID: 8215260665364952796}
   - component: {fileID: 8215260665364952799}
-  - component: {fileID: 8215260665364952795}
-  - component: {fileID: 2364464775374074742}
   - component: {fileID: 8215260665364952792}
   m_Layer: 7
   m_Name: Player
@@ -36,7 +34,7 @@ Transform:
   m_Children:
   - {fileID: 8215260667217422537}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8215260665364952797
 SpriteRenderer:
@@ -77,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 240461691
-  m_SortingLayer: 4
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 304023756, guid: 7c16e6b4e7830914c8c68ef3aa39849f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -87,7 +85,7 @@ SpriteRenderer:
   m_Size: {x: 2.5, y: 3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &8215260665364952796
@@ -127,42 +125,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.35}
   m_Size: {x: 1, y: 2.3}
   m_Direction: 0
---- !u!114 &8215260665364952795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8215260665364952798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf046d422e932f94bb157f66cc9a1e2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 8
-  jumpForce: 12
-  groundCheckPoint: {fileID: 8215260667217422537}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  knockBackLenght: 0.25
-  knockBackForce: 8
---- !u!114 &2364464775374074742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8215260665364952798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd19c4eed72924c46ade4e843c0e66b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentHealth: 0
-  maxHealth: 3
-  invincibleLenght: 1
-  invincibleCounter: 0
 --- !u!95 &8215260665364952792
 Animator:
   serializedVersion: 4
